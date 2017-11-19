@@ -25,7 +25,7 @@ SECRET_KEY = '(35x@y%ur+_4at#ej*=v#l^9sqj$rs1^pg&dm*y4zxjl8aeh^w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tactfulness.com','tactfulness.herokuapp.com','tactfulness']
+ALLOWED_HOSTS = ['tactfulness.herokuapp.com']
 
 
 # Application definition
