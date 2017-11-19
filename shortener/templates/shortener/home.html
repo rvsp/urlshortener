@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<style>
+body {
+      background-color: #6e58de94;
+      {% if bg_image %}background-image: url({{ bg_image }});{% endif %}
+      background-size: cover;
+    }
+.btn-link {
+      color: #50dfec;
+      text-shadow: none;
+    }
+    .btn-link:hover {
+      color: #000000;
+    }
+
+    .btn-primary {
+  background-color: #4285F4; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-color: #5a95f5 !important; }
+  .btn-primary.dropdown-toggle {
+    background-color: #4285F4 !important; }
+    .btn-primary.dropdown-toggle:hover, .btn-primary.dropdown-toggle:focus {
+      background-color: #5a95f5 !important; }
+</style>
+
+{% endblock styles %}
+{% block content %}
+    
+<h1 class="cover-heading">{{ title }}</h1>
+<p class='lead'>Shorten that URL</p>
+<p class="lead">
+     <div class='col-sm-10 col-sm-offset-1'> 
+                <form method='POST' action='.'> {% csrf_token %}
+                    <!-- <input name='url' type='text' placeholder='Shorten your URL like http://www.codingforentrepreneurs.com' /> -->
+                    {{ form.as_p }}
+                    <input class='btn btn-lg btn-primary' type='submit' value='Shorten &raquo;' >
+                </form>
+            </div>
+</p>
+{% endblock content %}
