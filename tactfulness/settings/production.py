@@ -61,7 +61,7 @@ ROOT_URLCONF = 'tactfulness.urls'
 ROOT_HOSTCONF = 'tactfulness.hosts'
 DEFAULT_HOST='www'
 DEFAULT_REDIRECT_URL="tactfulness.herokuapp.com"
-PARENT_HOST="tactfulness.herokuapp.com"
+#PARENT_HOST="tactfulness.herokuapp.com"
 
 TEMPLATES = [
     {
