@@ -25,7 +25,7 @@ SECRET_KEY = '(35x@y%ur+_4at#ej*=v#l^9sqj$rs1^pg&dm*y4zxjl8aeh^w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tactfulness.herokuapp.com','https://tactfulness.herokuapp.com/']
+ALLOWED_HOSTS = ['https://tactfulness.herokuapp.com/','tactfulness.herokuapp.com']
 
 
 # Application definition
@@ -92,6 +92,9 @@ DATABASES = {
     }
 }
 
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
