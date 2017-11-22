@@ -25,7 +25,7 @@ SECRET_KEY = '(35x@y%ur+_4at#ej*=v#l^9sqj$rs1^pg&dm*y4zxjl8aeh^w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tactfulness.herokuapp.com']
+ALLOWED_HOSTS = ['tactfulness.herokuapp.com','https://tactfulness.herokuapp.com/']
 
 
 # Application definition
@@ -60,8 +60,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'tactfulness.urls'
 ROOT_HOSTCONF = 'tactfulness.hosts'
 DEFAULT_HOST='www'
-DEFAULT_REDIRECT_URL="tactfulness.herokuapp.com"
-#PARENT_HOST="tactfulness.herokuapp.com"
+DEFAULT_REDIRECT_URL="https://tactfulness.herokuapp.com"
+PARENT_HOST="tactfulness.herokuapp.com"
 
 TEMPLATES = [
     {

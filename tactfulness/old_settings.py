@@ -60,8 +60,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'tactfulness.urls'
 ROOT_HOSTCONF = 'tactfulness.hosts'
 DEFAULT_HOST='www'
-DEFAULT_REDIRECT_URL="tactfulness.com:8000"
-PARENT_HOST="tactfulness.com:8000"
+DEFAULT_REDIRECT_URL="http://www.tactfulness.com:5000"
+PARENT_HOST="tactfulness.com:5000"
 
 TEMPLATES = [
     {
